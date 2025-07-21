@@ -932,28 +932,28 @@ if(ctx) {
   <section class="chart-section">
    
     <h2 class="section-title"> IBCM Live Marketcap </h2>
-    <div id="price-chart-widget-container"></div>
+   <div id="price-chart-widget-container" style="width: 100%; height:100%">
     <script type="text/javascript">
       (function() {
         function loadWidget() {
           if (typeof window.createMyWidget === 'function') {
             window.createMyWidget('price-chart-widget-container', {
               autoSize: true,
-              chainId: 'solana',
-              tokenAddress: 'AmjcRH341ppCZmCzvdHVf3z1NwL3pAAKvqJGPHbLJKRf',
-              showHoldersChart: true,
-              defaultInterval: '1D',
-              timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone ?? 'Etc/UTC',
-              theme: 'moralis',
-              locale: 'en',
-              backgroundColor: '#0d2035',
-              gridColor: '#0d2035',
-              textColor: '#f5a623',
-              candleUpColor: '#4CE666',
-              candleDownColor: '#E64C4C',
-              hideLeftToolbar: false,
-              hideTopToolbar: false,
-              hideBottomToolbar: false
+          chainId: 'solana',
+          tokenAddress: 'AmjcRH341ppCZmCzvdHVf3z1NwL3pAAKvqJGPHbLJKRf',
+          showHoldersChart: true,
+          defaultInterval: '1D',
+          timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone ?? 'Etc/UTC',
+          theme: 'moralis',
+          locale: 'en',
+          backgroundColor: '#071321',
+          gridColor: '#0d2035',
+          textColor: '#68738D',
+          candleUpColor: '#4CE666',
+          candleDownColor: '#E64C4C',
+          hideLeftToolbar: false,
+          hideTopToolbar: false,
+          hideBottomToolbar: false
             });
           } else {
             console.error('createMyWidget function is not defined.');
@@ -973,6 +973,8 @@ if(ctx) {
         }
       })();
     </script>
+  </div>
+
   </section>
   <!-- END CHART WIDGET SECTION -->
 
